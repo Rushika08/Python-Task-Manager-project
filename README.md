@@ -1,6 +1,6 @@
 # **Task Manager Project**
 
-#### Video Demo:  <(https://youtu.be/e5GJse0moQI)>
+#### Video Demo:  [URL](https://youtu.be/e5GJse0moQI)
 #### Description:
 
 * Name                : Ashen Rushika David Jayasinghe
