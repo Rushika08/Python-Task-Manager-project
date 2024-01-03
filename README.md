@@ -3,6 +3,14 @@
 #### Video Demo:  <URL HERE>
 #### Description:
 
+Name                : Ashen Rushika David Jayasinghe
+Github Username     : Rushika08
+edX username        : Rushika_D
+Country             : Sri Lanka
+City                : Katunayake, Gampaha District
+Date of recording   : 3rd January 2024
+
+
 ## Overview
 The Task Manager project is a command-line-based application designed to assist users in organizing and managing their tasks efficiently. Developed in Python, this project provides a user-friendly interface for different tasks. Such as,
 * Add tasks
@@ -58,3 +66,9 @@ The project relies on the following external libraries:
 * 'PrettyTable': Utilized for creating well-formatted tables for task visualization.
 
 Ensure these libraries are installed before running the project.
+
+## Conclusion
+
+The Task Manager project serves as a practical tool for individuals seeking a lightweight and efficient solution for task organization. By combining simplicity with essential features, it offers a convenient way to manage and stay on top of tasks effectively.
+
+Feel free to explore, contribute, or customize the project based on your specific needs. Happy task managing!
