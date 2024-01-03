@@ -7,7 +7,7 @@ def main():
         print("\n1. Add Task\n2. View Tasks\n3. Mark Task as Completed\n"
               "4. Delete Task\n5. Sort Tasks by Due Date\n6. Show Upcoming Tasks\n7. Exit")
         choice = input("Enter your choice: ")
-        
+
         if choice == '1':
             add_task()
         elif choice == '2':
@@ -89,12 +89,14 @@ def delete_task():
 
 def sort_tasks_by_due_date():
     tasks = load_tasks()
-    if tasks:
-        tasks.sort(key=lambda x: datetime.strptime(x['due_date'], "%Y-%m-%d"))
-        save_tasks(tasks)
+    incomplete_tasks = [task for task in tasks if not task['completed']]
+
+    if incomplete_tasks:
+        incomplete_tasks.sort(key=lambda x: datetime.strptime(x['due_date'], "%Y-%m-%d"))
+        save_tasks(incomplete_tasks)
         print("Tasks sorted by due date.")
     else:
-        print("No tasks to sort.")
+        print("No incomplete tasks to sort.")
 
 def show_upcoming_tasks():
     tasks = load_tasks()
