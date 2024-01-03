@@ -13,31 +13,31 @@ The Task Manager project is a command-line-based application designed to assist 
 * Show upcoming tasks
 
 ## Features
-# **1. Add Task**
+### **1. Add Task**
 
 Users can easily add tasks to the manager by providing essential information such as task name, description, and due date. The application validates the due date format to ensure accurate entry. The task description is not essential to provide.
 
-# **2. View Tasks**
+### **2. View Tasks**
 
 The project enables users to view their tasks, presenting them in a well-organized tabular format. The table includes key details like task name, description, due date, and completion status.
 
-# **3. Mark Task as Completed**
+### **3. Mark Task as Completed**
 
 Users have the ability to mark tasks as completed. The application displays the task list and then prompts the user to select a task index, and upon confirmation, the specified task is marked as completed.
 
-# **4. Delete Task**
+### **4. Delete Task**
 
 This feature allows users to remove unwanted tasks from the manager. Similar to marking as completed, the application prompts the user to select a task index for deletion.
 
-# **5. Sort Tasks by Due Date**
+### **5. Sort Tasks by Due Date**
 
 The Task Manager provides functionality to sort tasks based on their due dates. Incomplete tasks are sorted in ascending order of due dates, ensuring a clear view of upcoming deadlines.
 
-# **6. Show Upcoming Tasks**
+### **6. Show Upcoming Tasks**
 
 Users can visualize their upcoming tasks using this feature. The application identifies incomplete tasks with due dates beyond the current date and displays them in a neatly formatted table.
 
-# **7. Data Persistence**
+### **7. Data Persistence**
 
 The project incorporates data persistence by saving tasks to a JSON file ('tasks.json'). This ensures that tasks are retained even after closing and reopening the application.
 
@@ -58,4 +58,3 @@ The project relies on the following external libraries:
 * 'PrettyTable': Utilized for creating well-formatted tables for task visualization.
 
 Ensure these libraries are installed before running the project.
-
