@@ -109,6 +109,17 @@ def show_upcoming_tasks():
     else:
         print("No tasks found.")
 
+def load_tasks():
+    try:
+        with open("tasks.json", "r") as file:
+            tasks = json.load(file)
+    except (json.JSONDecodeError, FileNotFoundError):
+        tasks = []
+    return tasks
+
+def save_tasks(tasks):
+    with open("tasks.json", "w") as file:
+        json.dump(tasks, file, indent=2)
 
 if __name__ == "__main__":
     main()
