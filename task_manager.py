@@ -1,8 +1,22 @@
+"""
+
+Project Name        : Task Manager Project
+Name                : Ashen Rushika David Jayasinghe
+Github Username     : Rushika08
+edX username        : Rushika_D
+Country             : Sri Lanka
+City                : Katunayake, Gampaha District
+Date of recording   : 3rd January 2024
+
+"""
+
+
 import json
 from datetime import datetime, timedelta
+from prettytable import PrettyTable
 
 def main():
-    print("Welcome to Task Manager!")
+    print("\n\nWelcome to Task Manager!")
     while True:
         print("\n1. Add Task\n2. View Tasks\n3. Mark Task as Completed\n"
               "4. Delete Task\n5. Sort Tasks by Due Date\n6. Show Upcoming Tasks\n7. Exit")
@@ -25,6 +39,12 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
+
+        user_input = input("\nPress Enter to continue or input '7' to exit...\n")
+
+        if user_input == '7':
+            print("\nExiting Task Manager. Goodbye!")
+            break
 
 def add_task():
     task_name = input("Enter task name: ")
@@ -54,8 +74,13 @@ def view_tasks():
     if not tasks:
         print("No tasks found.")
     else:
+        table = PrettyTable()
+        table.field_names = ["Index", "Task Name", "Description", "Due Date", "Completed"]
+
         for index, task in enumerate(tasks, start=1):
-            print(f"{index}. {task['name']} - Due: {task['due_date']} - Completed: {task['completed']}")
+            table.add_row([index, task['name'], task['description'], task['due_date'], task['completed']])
+
+        print(table)
 
 def mark_task_completed():
     tasks = load_tasks()
@@ -104,8 +129,13 @@ def show_upcoming_tasks():
         today = datetime.now()
         upcoming_tasks = [task for task in tasks if not task['completed'] and datetime.strptime(task['due_date'], "%Y-%m-%d") >= today]
         if upcoming_tasks:
+            table = PrettyTable()
+            table.field_names = ["Index", "Task Name", "Due Date", "Completed"]
+
             for index, task in enumerate(upcoming_tasks, start=1):
-                print(f"{index}. {task['name']} - Due: {task['due_date']} - Completed: {task['completed']}")
+                table.add_row([index, task['name'], task['due_date'], task['completed']])
+
+            print(table)
         else:
             print("No upcoming tasks.")
     else:
