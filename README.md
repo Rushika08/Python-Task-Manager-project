@@ -3,12 +3,12 @@
 #### Video Demo:  <URL HERE>
 #### Description:
 
-Name                : Ashen Rushika David Jayasinghe
-Github Username     : Rushika08
-edX username        : Rushika_D
-Country             : Sri Lanka
-City                : Katunayake, Gampaha District
-Date of recording   : 3rd January 2024
+* Name                : Ashen Rushika David Jayasinghe
+* Github Username     : Rushika08
+* edX username        : Rushika_D
+* Country             : Sri Lanka
+* City                : Katunayake, Gampaha District
+* Date of recording   : 3rd January 2024
 
 
 ## Overview
