@@ -53,9 +53,9 @@ The project incorporates data persistence by saving tasks to a JSON file ('tasks
 
 To use the Task Manager, follow these steps:
 
-1.Run the 'project.py' file.
-2.Choose from the available options in the menu to perform different operations.
-3.Input the required details such as task name, description, due date, and task index when prompted.
+1. Run the 'project.py' file.
+2. Choose from the available options in the menu to perform different operations.
+3. Input the required details such as task name, description, due date, and task index when prompted.
 
 ## Dependencies
 
